@@ -19,10 +19,10 @@ const cityLatLong = {
     lat: 41.92,
     long: 45.47,
   },
-  helsinki: {
-    name: "ჰელსინკი",
-    lat: 60.192,
-    long: 24.945,
+  kazbegi: {
+    name: "ყაზბეგი",
+    lat: 42.657,
+    long: 44.642,
   },
 };
 
