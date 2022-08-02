@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react";
 
-import { CityAndTemp, CityButton, Diagnosis } from "./components";
+import {
+  CityAndTemp,
+  CityButton,
+  Diagnosis,
+  KhashuriDiagnosis,
+} from "./components";
 
 import cityLatLong from "./data/city-data";
 import fetchWeather from "./utils/fetch-weather";
@@ -17,8 +22,8 @@ export default function App() {
   }, [city]);
 
   return (
-    <div className="w-full grid place-items-center h-screen">
-      <div className="w-full sm:w-[400px] flex flex-col justify-start items-center space-y-6 bg-slate-100 rounded-md py-4 border shadow-sm">
+    <div className="w-full grid place-items-center h-screen background-gradient">
+      <div className="w-full sm:w-[400px] flex flex-col justify-start items-center space-y-6 bg-slate-100 rounded-md py-4">
         <div className="flex flex-col justify-start items-center space-y-6 py-4 bg-slate-200 rounded-md">
           <div className="mx-auto text-center">
             <p className="text-3xl font-bold font-archy-bold">
@@ -40,7 +45,10 @@ export default function App() {
         {cityIsSet({ city, temperature }) && (
           <CityAndTemp {...{ city, temperature }} />
         )}
-        {temperature && <Diagnosis {...{ temperature }} />}
+        {city !== "khashuri" && temperature && (
+          <Diagnosis {...{ temperature }} />
+        )}
+        {city === "khashuri" && <KhashuriDiagnosis />}
       </div>
     </div>
   );

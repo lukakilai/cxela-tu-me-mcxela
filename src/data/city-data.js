@@ -29,6 +29,12 @@ const cityLatLong = {
     lat: 42.657,
     long: 44.642,
   },
+  khashuri: {
+    btnLabel: "ხაშურში",
+    name: "ხაშური",
+    lat: 41.994,
+    long: 43.598,
+  },
 };
 
 export default cityLatLong;

@@ -17,4 +17,8 @@
   .generalButton {
     @apply px-4 py-2 rounded-xl cursor-pointer text-center;
   }
+
+  .background-gradient {
+    @apply bg-gradient-to-b from-red-300 to-sky-300;
+  }
 }
