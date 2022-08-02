@@ -7,7 +7,7 @@
 
 @layer components {
   .activeButton {
-    @apply bg-white text-blue-700 shadow-lg  outline outline-2;
+    @apply bg-white text-blue-700 shadow-lg;
   }
 
   .inactiveButton {

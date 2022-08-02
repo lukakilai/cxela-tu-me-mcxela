@@ -23,7 +23,7 @@ export default function App() {
 
   return (
     <div className="w-full grid place-items-center h-screen background-gradient p-6">
-      <div className="w-full sm:w-[400px] flex flex-col justify-start items-center space-y-6 bg-slate-100 rounded-md p-4">
+      <div className="w-full sm:w-[400px] flex flex-col justify-start items-center space-y-6 bg-slate-50 rounded-md p-4">
         <div className="flex flex-col justify-start items-center space-y-6 py-4 bg-slate-200 rounded-md w-full">
           <div className="mx-auto text-center">
             <p className="text-3xl font-bold font-archy-bold">
