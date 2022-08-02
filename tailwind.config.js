@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "archy-bold": ["ArchyEDT-Bold", "sans-serif"],
+        "archy-thin": ["ArchyEDT-Thin", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };

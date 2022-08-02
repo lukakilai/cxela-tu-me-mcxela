@@ -18,10 +18,12 @@ export default function App() {
 
   return (
     <div className="w-full grid place-items-center h-screen">
-      <div className="w-full sm:w-[400px] flex flex-col justify-start items-center space-y-6 bg-slate-100 rounded-xl py-4">
-        <div className="flex flex-col justify-start items-center space-y-6 py-4 bg-slate-200 rounded-xl">
+      <div className="w-full sm:w-[400px] flex flex-col justify-start items-center space-y-6 bg-slate-100 rounded-md py-4 border shadow-sm">
+        <div className="flex flex-col justify-start items-center space-y-6 py-4 bg-slate-200 rounded-md">
           <div className="mx-auto text-center">
-            <p className="text-xl font-bold">სად იმყოფები ამჟამად?</p>
+            <p className="text-3xl font-bold font-archy-bold">
+              სად იმყოფები ამჟამად?
+            </p>
           </div>
           <ul className="mx-auto grid grid-cols-2 sm:grid-cols-3 gap-4 px-6">
             {Object.keys(cityLatLong).map((cityName) => (
